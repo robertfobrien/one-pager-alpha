@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Flex, Heading, Text, git commit -m "Your comment"
+import { Box, Flex, Heading, Text, Avatar } from '@chakra-ui/core';
 
 import { OnePagerData, OnePagerPerson } from '../model/model';
 import { ContentCard } from './ContentCard';
