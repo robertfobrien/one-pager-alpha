@@ -4,6 +4,7 @@ import * as investors from './investors';
 
 /** An empty one pager, for initial React state */
 export const EMPTY_ONE_PAGER: OnePagerData = {
+  logo: '',
   companyName: '',
   url: '',
   industryTags: [],
@@ -12,6 +13,7 @@ export const EMPTY_ONE_PAGER: OnePagerData = {
 };
 
 const facebook: OnePagerData = {
+  logo: 'https://facebookbrand.com/wp-content/uploads/2019/10/flogo_RGB_HEX-BRC-Site-250.png?w=250&h=250',
   companyName: 'Facebook',
   url: 'facebook',
   industryTags: ['Social Media', 'Messaging', 'Mobile'],
@@ -29,6 +31,7 @@ const facebook: OnePagerData = {
 };
 
 const lendingClub: OnePagerData = {
+  logo: 'https://res-5.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/fnyd5qggryugrcynulkf',
   companyName: 'Lending Club',
   url: 'lending-club',
   industryTags: ['P2P', 'Consumer Lending', 'Finance'],
@@ -44,6 +47,7 @@ const lendingClub: OnePagerData = {
 };
 
 const spotify: OnePagerData = {
+  logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/1200px-Spotify_logo_without_text.svg.png',
   companyName: 'Spotify',
   url: 'spotify',
   industryTags: ['music', 'streaming'],
@@ -60,6 +64,7 @@ const spotify: OnePagerData = {
 };
 
 const workday: OnePagerData = {
+  logo: 'https://res-4.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco/wkcmugw15pjmsqtnhoxe',
   companyName: 'Workday',
   url: 'workday',
   industryTags: ['SaaS', 'HR', 'Software'],
@@ -75,6 +80,7 @@ const workday: OnePagerData = {
 };
 
 const zynga: OnePagerData = {
+  logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/3/32/Zynga_logo.jpg/250px-Zynga_logo.jpg',
   companyName: 'Zynga',
   url: 'zynga',
   industryTags: ['Gaming', 'Mobile'],
@@ -104,6 +110,7 @@ export const ONE_PAGERS_PUBLIC_DATA_ARRAY: OnePagerPublicData[] = Array.from(
   ONE_PAGERS_ALL_DATA_MAP.values()
 ).map((onePager: OnePagerData) => {
   return {
+    logo: onePager.logo,
     companyName: onePager.companyName,
     url: onePager.url,
     industryTags: onePager.industryTags,
