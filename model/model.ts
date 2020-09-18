@@ -3,10 +3,12 @@ export interface OnePagerPerson {
   name: string;
   title: string;
   description?: string;
+  email: string;
 }
 
 /** Public access one pager data fields. */
 export interface OnePagerPublicData {
+  logo: string;
   companyName: string;
   url: string;
   industryTags: string[];
@@ -15,6 +17,7 @@ export interface OnePagerPublicData {
 
 /** Full one pager data model. */
 export interface OnePagerData {
+  logo: string;
   companyName: string;
   url: string;
   industryTags: string[];
