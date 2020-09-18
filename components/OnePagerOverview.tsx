@@ -2,6 +2,8 @@ import { Flex, Badge, Heading, Text } from '@chakra-ui/core';
 
 import { OnePagerData } from '../model/model';
 import { ContentCard } from './ContentCard';
+import {Image } from '@chakra-ui/core';
+
 
 type OnePagerOverviewProps = {
   onePagerData: OnePagerData;
@@ -13,10 +15,12 @@ export const OnePagerOverview = ({
   isLoading,
 }: OnePagerOverviewProps) => {
   return (
-    <ContentCard title='Overview' isLoading={isLoading}>
+    <ContentCard title='Overview' isLoading={isLoading}> 
+      <Image rounded="full" alignContent="right" size="100px" src={onePagerData.logo} alt={onePagerData.companyName}/>
       <Heading as='h1' size='lg' marginRight='10px'>
-        {onePagerData.companyName}
+      {onePagerData.companyName}
       </Heading>
+
       <Heading as='h2' size='sm' color='grey' fontStyle='italic'>
         {onePagerData.briefDescription}
       </Heading>

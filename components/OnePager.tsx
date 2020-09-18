@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-import { Box, Flex, Divider } from '@chakra-ui/core';
+import { Box, Flex, Divider, Image } from '@chakra-ui/core';
 
 import { OnePagerData } from '../model/model';
 import { getOnePagerData } from '../data/dataService';
@@ -36,6 +36,8 @@ export const OnePager = ({ onePagerUrl }: { onePagerUrl: string }) => {
         <link rel='icon' href='/favicon.png' />
       </Head>
 
+
+
       <Header />
 
       <OnePagerOverview onePagerData={onePagerData} isLoading={isLoading} />
@@ -67,3 +69,4 @@ export const OnePager = ({ onePagerUrl }: { onePagerUrl: string }) => {
 };
 
 const Diveder50 = () => <Divider width='50%' />;
+

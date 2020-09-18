@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Flex, Heading, Text, Avatar } from '@chakra-ui/core';
+import { Box, Flex, Heading, Text, git commit -m "Your comment"
 
 import { OnePagerData, OnePagerPerson } from '../model/model';
 import { ContentCard } from './ContentCard';
@@ -23,8 +23,11 @@ export const OnePagerFounders = ({
   );
 };
 
+
+
 /** Renders a Founder component. */
 const Founder = ({ person }: { person: OnePagerPerson }) => {
+  const mailToPerson = 'mailto:' + person.email;
   return (
     <Flex align='center'>
       <Avatar marginRight='10px'></Avatar>
@@ -45,6 +48,11 @@ const Founder = ({ person }: { person: OnePagerPerson }) => {
         </Box>
         <Text fontSize='sm' marginTop='5px'>
           {person.description}
+        </Text>
+      </Box>
+      <Box>
+        <Text fontSize='sm' marginTop='5px'>
+          <a href={mailToPerson}>{person.email}</a> 
         </Text>
       </Box>
     </Flex>
